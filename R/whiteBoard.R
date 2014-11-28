@@ -1,4 +1,6 @@
-prova<-function() {
+prova<-function(x) {
+    return(x)
 }
+
 
 
