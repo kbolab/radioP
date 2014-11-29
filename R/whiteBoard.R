@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-
 library(XML)
-
 
 buildExamProbabilityCache<-function() {
   
