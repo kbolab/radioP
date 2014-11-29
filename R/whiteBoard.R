@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 library(XML)
 
@@ -51,3 +52,13 @@ jocc.xml = xmlInternalTreeParse("./jocc.xml")
 for(i in seq(1,50)) {
   phoneCall(atTime=i)
 }
+=======
+#' prova 2
+#' @param x parametro
+prova<-function(x) {
+    return(x)
+}
+
+
+
+>>>>>>> 7e6a1ff51acc9cc8060a2e63ffbf2e3a39d3b3d2
