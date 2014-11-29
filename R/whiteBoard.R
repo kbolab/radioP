@@ -62,20 +62,15 @@ buildCalendarStruct<-function(   ) {
     fromSlot<-aTT["fromSlot"]
     toSlot<-aTT["toSlot"]
     dayOfTheWeek<-aTT["dayOfTheWeek"]
-    fromDay<-aTT["fromDay"]
-    toDay<-aTT["toDay"]
+    fromDay<-as.numeric(aTT["fromDay"])
+    toDay<-as.numeric(aTT["toDay"])
     period<-aTT["period"]
     if ( period == "w" ) {
-      
       for( ii in seq(from=fromDay,to=toDay,by=7)) {
-        
+        print("Arrivato qui"); die()
       }
-      
-      
-    } else {cat ("#gj9fj9gf"); stop();}
-    
+    } else { cat ("#gj9fj9gf"); stop(); }
   }
-  
   
 }
 
