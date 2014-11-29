@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<root>
+    <rules>
+        <rule cFamiglia="1" cDiagnostica="6" firstDay="1" fromSlot="96" toSlot="130" period="w" until="100"/>
+        <rule cFamiglia="2" cDiagnostica="6" firstDay="1" fromSlot="131" to="160" period="w" until="100"/>
+
+        <rule cFamiglia="1" cDiagnostica="6" firstDay="2" fromSlot="96" toSlot="130" period="w" until="100"/>
+        <rule cFamiglia="2" cDiagnostica="6" firstDay="2" fromSlot="131" toSlot="160" period="w" until="100"/>
+
+        <rule cFamiglia="1" cDiagnostica="6" firstDay="3" fromSlot="96" toSlot="130" period="w" until="100"/>
+        <rule cFamiglia="2" cDiagnostica="6" firstDay="3" fromSlot="131" toSlot="160" period="w" until="100"/>
+
+        <rule cFamiglia="3" cDiagnostica="6" firstDay="1" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="3" cDiagnostica="6" firstDay="4" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="4" cDiagnostica="5" firstDay="1" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="4" cDiagnostica="5" firstDay="1" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="5" cDiagnostica="6" firstDay="5" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="5" cDiagnostica="6" firstDay="5" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="6" cDiagnostica="5" firstDay="4" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="6" cDiagnostica="5" firstDay="4" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="7" cDiagnostica="5" firstDay="3" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="7" cDiagnostica="5" firstDay="3" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="8" cDiagnostica="5" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="8" cDiagnostica="5" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="9" cDiagnostica="2" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="9" cDiagnostica="2" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="10" cDiagnostica="3" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="10" cDiagnostica="3" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="11" cDiagnostica="3" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="11" cDiagnostica="3" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="12" cDiagnostica="3" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="12" cDiagnostica="3" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+        
+        <rule cFamiglia="13" cDiagnostica="3" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="13" cDiagnostica="3" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+        
+        <rule cFamiglia="14" cDiagnostica="3" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="14" cDiagnostica="3" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+         
+        <rule cFamiglia="15" cDiagnostica="3" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="15" cDiagnostica="3" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>
+
+        <rule cFamiglia="16" cDiagnostica="3" firstDay="2" fromSlot="160" toSlot="200" period="w" until="100"/>
+        <rule cFamiglia="16" cDiagnostica="3" firstDay="2" fromSlot="100" toSlot="140" period="w" until="100"/>        
+    </rules>
+</root>

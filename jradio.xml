@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<root>
+    <conf id_univoco="1">
+        <alpha valore="0.1" />
+        <beta valore="0.9" />
+        <limite_sforamento valore="60" />
+        <n_passi valore="10" />
+        <prefisso_file_output valore="test/test" />
+    </conf>
+	<famiglie>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="1" coda_massima_H="5" nome_famiglia="TAC senza MDC - INT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="0.6"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.2"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="2" coda_massima_H="5" nome_famiglia="TAC senza MDC - EXT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="0.6"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.2"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="3" coda_massima_H="5" nome_famiglia="TAC senza MDC - EXT convenzionati">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="0.6"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.2"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="4" coda_massima_H="5" nome_famiglia="TAC senza MDC - BV">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="0.6"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.2"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="5" coda_massima_H="5" nome_famiglia="TAC con MDC - INT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.3"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="6" coda_massima_H="5" nome_famiglia="TAC con MDC - BV">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.3"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="7" coda_massima_H="5" nome_famiglia="TAC con MDC - EXT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.3"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="8" coda_massima_H="5" nome_famiglia="TAC complesse">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.8"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="9" coda_massima_H="5" nome_famiglia="TAC complesse - QUICK">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.8"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="10" coda_massima_H="5" nome_famiglia="TAC - EXT pediatrica">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.8"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="11" coda_massima_H="5" nome_famiglia="TAC - BV pediatrica">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.8"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="6"  id_tipo_famiglia="12" coda_massima_H="5" nome_famiglia="TAC - INT pediatrica">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="1"/>
+				<id_mansione tipo="3" utilizzo="0.8"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+            	<tipo_famiglia durata="4"  id_tipo_famiglia="13" coda_massima_H="6" nome_famiglia="ECO - INT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+            	<tipo_famiglia durata="4"  id_tipo_famiglia="14" coda_massima_H="6" nome_famiglia="ECO - EXT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+            	<tipo_famiglia durata="4"  id_tipo_famiglia="15" coda_massima_H="6" nome_famiglia="ECO - BV">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+            	<tipo_famiglia durata="4"  id_tipo_famiglia="16"  coda_massima_H="6" nome_famiglia="ECO - EXT convenzionati">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="4"  id_tipo_famiglia="17" coda_massima_H="6" nome_famiglia="ECO complesse - INT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0.5"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+		<tipo_famiglia durata="4"  id_tipo_famiglia="18" coda_massima_H="6" nome_famiglia="ECO complesse - EXT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0.5"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+            	<tipo_famiglia durata="4"  id_tipo_famiglia="19" coda_massima_H="6" nome_famiglia="ECO con MDC - INT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0.5"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+            	<tipo_famiglia durata="4"  id_tipo_famiglia="20" coda_massima_H="6" nome_famiglia="ECO con MDC - EXT">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0.5"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+            	<tipo_famiglia durata="4"  id_tipo_famiglia="21" coda_massima_H="6" nome_famiglia="ECO con MDC - BV">
+			<utilizzo_personale>
+				<id_mansione tipo="1" utilizzo="1"/>
+				<id_mansione tipo="2" utilizzo="0.3"/>
+				<id_mansione tipo="3" utilizzo="0.5"/>
+			</utilizzo_personale>
+		</tipo_famiglia>
+	</famiglie>
+
+	<esame>
+		<dati_esame nome_esame="ANGIO TC AORTA ADDOMINALE" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse" ovr_coda_massima="3" richieste="1.5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse - QUICK" ovr_coda_massima="3" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ANGIO TC AORTA TORACICA" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse" ovr_coda_massima="9" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse - QUICK" ovr_coda_massima="3" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE - ADDOME SUP (mdc)" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="5" richieste="7"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="15"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="8"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="10"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="3"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE - ADDOME SUP (senza mdc)" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="9"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="17"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="11"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="2" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC STAGING mdc" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="6" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE-ADD COMPL-ENCEF-COLLO mdc" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12"  richieste="7"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5"  richieste="9"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5"  richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5"  richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5"  richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5"  richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE - ADDOME COMPLETO mdc" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="15"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="20"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="7"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="3"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE - ADDOME COMPLETO senza mdc" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="19"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="5" richieste="12"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="5" richieste="6"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC ADDOME SUP - ENCEFALO mdc" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="8"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="11"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="5"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC ADDOME SUP - ENCEFALO senza mdc" spesa="12" costo="10">
+		<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="10"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="5" richieste="9"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC COLLO - TORACE (mdc)" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="16"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="13"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="8"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="3"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC COLLO - TORACE TC AGOBIOPSIA LINFONODALE TC-GUIDATA(senza mdc)"  spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="5" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="5" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="0.5"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO STAZIONI LINFONODALI" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12"  richieste="23"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12"  richieste="7"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12"  richieste="30"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE - ADD COMP - ENCEFALO" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="19"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="35"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="4"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC RENI SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12"  richieste="11"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="23"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="41"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="6"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="8"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="7"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACE MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="20"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="35"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO MAMMARIA BILATERALE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="21"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="54"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="12"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ADDOME SUPERIORE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="56"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="15"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="63"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="11"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO COLLO" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="10"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="2"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="15"/>
+                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="7"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ADDOME SUPERIORE SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - INT" ovr_coda_massima="12" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - EXT" ovr_coda_massima="12" richieste="12"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ADDOME INFERIORE SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - INT" ovr_coda_massima="12" richieste="7"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - BV" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - EXT" ovr_coda_massima="12" richieste="15"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO GROSSI VASI ADDOMINALI SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - INT" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO con MDC - EXT" ovr_coda_massima="12" richieste="6"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC ADDOME SUPERIORE SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="12"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="21"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ADDOME INFERIORE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="30"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="10"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="45"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="10"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ADDOME COMPLETO" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="25"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="8"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="36"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="5"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO APPARATO URINARIO COMPLETO" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC ADDOME INFERIORE SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="10"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="23"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO GROSSI VASI ADDOMINALI" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="7"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO MUSCOLO-TENDINEA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="21"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="5"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC COLLO SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="10"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="21"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC TORACENTESI TC-GUIDATA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse - QUICK" ovr_coda_massima="3" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC AGOBIOPSIA LINFONODALE TC-GUIDATA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse - QUICK" ovr_coda_massima="3" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="BIOPSIA TC-GUIDATA VERTEBRALE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse - QUICK" ovr_coda_massima="3" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="BIOPSIA ECO-GUIDATA FEGATO" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - INT" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - EXT" ovr_coda_massima="12" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="BIOPSIA ECO-GUIDATA MASSA ADDOMINALE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - EXT" ovr_coda_massima="12" richieste="4"/>
+		</dati_esame>
+		<dati_esame nome_esame="ALCOOLIZZAZIONE REGIONE TIROIDEA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - INT" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - EXT" ovr_coda_massima="12" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="DRENAGGIO ADDOMINALE ECOGUIDATO" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - INT" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - EXT" ovr_coda_massima="12" richieste="3"/>
+		</dati_esame>
+		<dati_esame nome_esame="TORACENTESI O PARACENTESI ECO-GUIDATA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - INT" ovr_coda_massima="12" richieste="7"/>
+		</dati_esame>
+		<dati_esame nome_esame="ARTRO-TC SPALLA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="11"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC RICOSTRUZIONE 3D MASSICCIO FACCIALE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC MASSICCIO FACCIALE SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="11"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC MASSICCIO FACCIALE SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC ROCCHE SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="16"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC ROCCHE MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="5" richieste="14"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC ORECCHIO MEDIO E INTERNO SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="11"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO MAMMARIA MONOLATERALE DX" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="15"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="25"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="5"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO MAMMARIA SINISTRA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="16"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="27"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="5"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO POLMONARE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO CUTE E SOTTOCUTE" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT convenzionati" ovr_coda_massima="12" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ANCHE PER SCREENING LUSSAZIONE CONGENITA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="35"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO TESTICOLI" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="6"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC PERITONEO-TC" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO OSTEO-ARTICOLARE" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="6"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ARTI SUPERIORI ARTERIOSA" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="3"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ARTI SUPERIORI VENOSA" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="12"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ARTI INFERIORI ARTERIOSA" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ARTI INFERIORI VENOSA" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="15"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ALTRI DISTRETTI VENOSA" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="7"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="9"/>
+		</dati_esame>
+		<dati_esame nome_esame="ECO ALTRI DISTRETTI ARTERIOSA" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO - EXT" ovr_coda_massima="12" richieste="3"/>
+		</dati_esame>
+		<dati_esame nome_esame="BIOPSIA ECOGUIDATA TIROIDE" richieste="7" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - INT" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - EXT" ovr_coda_massima="12" richieste="8"/>
+		</dati_esame>
+		<dati_esame nome_esame="AGOBIOPSIA GHIANDOLE SALIVARI ECO-GUIDATA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="ECO complesse - EXT" ovr_coda_massima="12" richieste="5"/>
+		</dati_esame>
+		<dati_esame nome_esame="BIOPSIA POLMONARE TC GUIDATA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse - QUICK" ovr_coda_massima="3" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="BIOPSIA OSSEA TC GUIDATA" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC complesse - QUICK" ovr_coda_massima="3" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC GOMITO E AVAMBRACCIO SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="15"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="7"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC GOMITO E AVAMBRACCIO SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="17"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="8"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC POLSO E MANO SX SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="15"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC POLSO E MANO SX SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC SPALLA E BRACCIO DX SENZA E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="11"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC SPALLA E BRACCIO DX SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC BACINO SENZA  E CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="8"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="6"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC BACINO SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="4"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="7"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="2"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC GINOCCHIO E GAMBA CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="15"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="7"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC GINOCCHIO E GAMBA SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="13"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC CAVIGLIA E PIEDE CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="11"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC CAVIGLIA E PIEDE SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="7"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="9"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="15"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC COXOFEMORALE E FEMORE SX CON MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - INT" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - EXT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC con MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="5"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+		<dati_esame nome_esame="TC COXOFEMORALE E FEMORE SX SENZA MDC" spesa="12" costo="10">
+				<associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - INT" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT" ovr_coda_massima="12" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - EXT convenzionati" ovr_coda_massima="12" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC senza MDC - BV" ovr_coda_massima="12" richieste="1"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - EXT pediatrica" ovr_coda_massima="5" richieste="3"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - INT pediatrica" ovr_coda_massima="5" richieste="2"/>
+                                <associazione_famiglia_esame peso="1.0" nome_famiglia="TAC - BV pediatrica" ovr_coda_massima="5" richieste="1"/>
+		</dati_esame>
+	</esame>
+	<diagnostica>
+		<dati_diagnostica nome="SALA ECOGRAFIA 1" id_dati_diagnostica="1">
+			<associazione_sala_famiglia nome_famiglia="ECO - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - BV"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - EXT convenzionati"/>
+			<associazione_sala_famiglia nome_famiglia="ECO complesse - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO complesse - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO con MDC - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO con MDC - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO con MDC - BV"/>
+			<ovr_durata_esame tempo="-3"/>
+			<orari_apertura_lunedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_martedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_mercoledi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_giovedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_venerdi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_sabato slot_inizio="96" slot_fine="144"/>
+			<orari_apertura_domenica slot_inizio="0" slot_fine="0"/>
+		</dati_diagnostica>
+
+		<dati_diagnostica nome="SALA ECOGRAFIA 2" id_dati_diagnostica="2">
+			<associazione_sala_famiglia nome_famiglia="ECO - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - BV"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - EXT convenzionati"/>
+			<associazione_sala_famiglia nome_famiglia="ECO complesse - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO complesse - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO con MDC - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO con MDC - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO con MDC - BV"/>
+			<ovr_durata_esame tempo="+5"/>
+			<orari_apertura_lunedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_martedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_mercoledi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_giovedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_venerdi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_sabato slot_inizio="96" slot_fine="144"/>
+			<orari_apertura_domenica slot_inizio="0" slot_fine="0"/>
+		</dati_diagnostica>
+
+		<dati_diagnostica nome="SALA ECOGRAFIA 3" id_dati_diagnostica="3">
+			<associazione_sala_famiglia nome_famiglia="ECO - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - BV"/>
+                        <associazione_sala_famiglia nome_famiglia="ECO - EXT convenzionati"/>
+			<ovr_durata_esame tempo="-3"/>
+			<orari_apertura_lunedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_martedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_mercoledi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_giovedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_venerdi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_sabato slot_inizio="96" slot_fine="144"/>
+			<orari_apertura_domenica slot_inizio="0" slot_fine="0"/>
+		</dati_diagnostica>
+		<dati_diagnostica nome="TC HIQ - SALA 4" id_dati_diagnostica="4">
+            <associazione_sala_famiglia nome_famiglia="TAC senza MDC - INT"/>
+            <associazione_sala_famiglia nome_famiglia="TAC senza MDC - EXT"/>
+            <associazione_sala_famiglia nome_famiglia="TAC senza MDC - EXT convenzionati"/>
+            <associazione_sala_famiglia nome_famiglia="TAC senza MDC - BV"/>
+			<ovr_durata_esame tempo="-3"/>
+			<orari_apertura_lunedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_martedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_mercoledi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_giovedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_venerdi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_sabato slot_inizio="96" slot_fine="144"/>
+			<orari_apertura_domenica slot_inizio="0" slot_fine="0"/>
+		</dati_diagnostica>
+		<dati_diagnostica nome="TC MULTISTRATO" id_dati_diagnostica="6">
+			<associazione_sala_famiglia nome_famiglia="TAC senza MDC - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC senza MDC - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC senza MDC - EXT convenzionati"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC senza MDC - BV"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC con MDC - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC con MDC - BV"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC con MDC - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC complesse"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC complesse - QUICK"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC - EXT pediatrica"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC - BV pediatrica"/>
+			<ovr_durata_esame tempo="-3"/>
+			<orari_apertura_lunedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_martedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_mercoledi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_giovedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_venerdi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_sabato slot_inizio="96" slot_fine="144"/>
+			<orari_apertura_domenica slot_inizio="0" slot_fine="0"/>
+		</dati_diagnostica>
+		<dati_diagnostica nome="TC SPIRALE - SALA 5" id_dati_diagnostica="5">
+			<associazione_sala_famiglia nome_famiglia="TAC senza MDC - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC senza MDC - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC senza MDC - EXT convenzionati"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC senza MDC - BV"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC con MDC - INT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC con MDC - BV"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC con MDC - EXT"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC - EXT pediatrica"/>
+                        <associazione_sala_famiglia nome_famiglia="TAC - BV pediatrica"/>
+			<ovr_durata_esame tempo="-3"/>
+			<orari_apertura_lunedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_martedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_mercoledi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_giovedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_venerdi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_sabato slot_inizio="96" slot_fine="144"/>
+			<orari_apertura_domenica slot_inizio="0" slot_fine="0"/>
+		</dati_diagnostica>
+		<dati_diagnostica nome="TC_PEDIATRICA" id_dati_diagnostica="7">
+			<associazione_sala_famiglia nome_famiglia="TAC - EXT pediatrica"/>
+            <associazione_sala_famiglia nome_famiglia="TAC - INT pediatrica"/>
+            <associazione_sala_famiglia nome_famiglia="TAC - BV pediatrica"/>
+			<ovr_durata_esame tempo="6"/>
+			<orari_apertura_lunedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_martedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_mercoledi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_giovedi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_venerdi slot_inizio="96" slot_fine="228"/>
+			<orari_apertura_sabato slot_inizio="96" slot_fine="144"/>
+			<orari_apertura_domenica slot_inizio="0" slot_fine="0"/>
+		</dati_diagnostica>
+	</diagnostica>
+
+	<personale>
+        <istanza_personale  id_istanza_personale="1" orario="48" id_mansione="1" lower_limit="84" upper_limit="144"/>
+        <istanza_personale  id_istanza_personale="2" orario="48" id_mansione="1" lower_limit="84" upper_limit="144"/>
+        <istanza_personale  id_istanza_personale="3" orario="48" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale  id_istanza_personale="4" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale  id_istanza_personale="5" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale  id_istanza_personale="6" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale  id_istanza_personale="7" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale  id_istanza_personale="8" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale  id_istanza_personale="9" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="10" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="12" orario="96" id_mansione="1" lower_limit="84" upper_limit="228"/>
+
+        <istanza_personale id_istanza_personale="13" orario="48" id_mansione="2" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="14" orario="96" id_mansione="2" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="15" orario="96" id_mansione="2" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="16" orario="96" id_mansione="2" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="17" orario="96" id_mansione="2" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="18" orario="96" id_mansione="2" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="19" orario="96" id_mansione="2" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="20" orario="96" id_mansione="2" lower_limit="84" upper_limit="228"/>
+
+        <istanza_personale id_istanza_personale="21" orario="48" id_mansione="3" lower_limit="84" upper_limit="144"/>
+        <istanza_personale id_istanza_personale="22" orario="96" id_mansione="3" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="23" orario="96" id_mansione="3" lower_limit="84" upper_limit="228"/>
+        <istanza_personale id_istanza_personale="24" orario="96" id_mansione="3" lower_limit="84" upper_limit="228"/>
+	</personale>
+
+</root>
