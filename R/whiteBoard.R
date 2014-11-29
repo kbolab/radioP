@@ -62,11 +62,12 @@ buildCalendarStruct<-function(   ) {
     fromSlot<-aTT["fromSlot"]
     toSlot<-aTT["toSlot"]
     dayOfTheWeek<-aTT["dayOfTheWeek"]
-    untilDay<-aTT["until"]
+    fromDay<-aTT["fromDay"]
+    toDay<-aTT["toDay"]
     period<-aTT["period"]
     if ( period == "w" ) {
       
-      for( ii in seq(firstDay,untilDay)) {
+      for( ii in seq(from=fromDay,to=toDay,by=7)) {
         
       }
       
