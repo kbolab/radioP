@@ -26,8 +26,61 @@ getRandomExam<-function() {
   posizioneMinimo<-which ( newArr==min(newArr),arr.ind = T  ) 
   return(examProbabilityCache[posizioneMinimo,])  
 }
+getIdFromFamilyName<-function(familyName) {
+  if( length(IdVSFamilyNameCache)==0 ) {
+    a<-xpathApply(jradio.xml,'/root/famiglie/tipo_famiglia',xmlAttrs)
+    IdVSFamilyNameCache<-c()
+    for( i in seq(1,length(a)))    {
+      IdVSFamilyNameCache<<-rbind(IdVSFamilyNameCache,c( a[[i]]["id_tipo_famiglia"], a[[i]]["nome_famiglia"]))
+    }
+  }
+  a<-which(IdVSFamilyNameCache[,2]==familyName,arr.ind = T)
+  if( length(a) == 0 ) {cat("#fhd8hf8dh8fd"); stop();}
+  return(IdVSFamilyNameCache[which(IdVSFamilyNameCache[,2]==familyName,arr.ind = T),1])
+  
+}
 
-findOutTheFirstPositionInAgenda<-function() {
+buildCalendarStruct<-function(   ) {
+  # per ogni disgnostica
+  calendar<<-list()
+  listaSale<-getNodeSet(jradio.xml,'/root/diagnostica/dati_diagnostica')
+  for( i in listaSale) {
+    aTT<-xmlAttrs(i)["cDiagnostica"]
+    for(ct in seq(1, (60/5)*24  )) {
+      calendar[[ aTT["cDiagnostica"]   ]][[1]][[ ct ]]<-list()
+    }        
+    for( days in seq(1,365)) {       
+      calendar[[ aTT["cDiagnostica"]   ]][[ days ]] <- calendar[[ aTT["cDiagnostica"]   ]][[1]]
+    }
+  }
+  # ora leggi l'XML per popolare il calendario
+  lRules<-getNodeSet(jocc.xml,'/root/rules/rule')  
+  
+  for( i in lRules ) {
+    aTT<-xmlAttrs( i )  
+    cDiagnostica<-aTT["cDiagnostica"]
+    fromSlot<-aTT["fromSlot"]
+    toSlot<-aTT["toSlot"]
+    dayOfTheWeek<-aTT["dayOfTheWeek"]
+    untilDay<-aTT["until"]
+    period<-aTT["period"]
+    if ( period == "w" ) {
+      
+      for( ii in seq(firstDay,untilDay)) {
+        
+      }
+      
+      
+    } else {cat ("#gj9fj9gf"); stop();}
+    
+  }
+  
+  
+}
+
+findOutTheFirstPositionInAgenda<-function(examName,familyName) {
+  IdFamiglia<-getIdFromFamilyName(familyName)
+  if( length(calendar)==0 ) buildCalendarStruct()
   
 }
 
@@ -49,13 +102,4 @@ jocc.xml = xmlInternalTreeParse("./jocc.xml")
 for(i in seq(1,50)) {
   phoneCall(atTime=i)
 }
-=======
-#' prova 2
-#' @param x parametro
-prova<-function(x) {
-    return(x)
-}
 
-
-
->>>>>>> 7e6a1ff51acc9cc8060a2e63ffbf2e3a39d3b3d2
