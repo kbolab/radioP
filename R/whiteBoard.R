@@ -29,7 +29,7 @@ getRandomExam<-function() {
 getIdFromFamilyName<-function(familyName) {
   if( length(IdVSFamilyNameCache)==0 ) {
     a<-xpathApply(jradio.xml,'/root/famiglie/tipo_famiglia',xmlAttrs)
-    IdVSFamilyNameCache<-c()
+    IdVSFamilyNameCache<<-c()
     for( i in seq(1,length(a)))    {
       IdVSFamilyNameCache<<-rbind(IdVSFamilyNameCache,c( a[[i]]["id_tipo_famiglia"], a[[i]]["nome_famiglia"]))
     }
@@ -42,15 +42,17 @@ getIdFromFamilyName<-function(familyName) {
 
 buildCalendarStruct<-function(   ) {
   # per ogni disgnostica
-  calendar<<-list()
+  calendar<-list()
   listaSale<-getNodeSet(jradio.xml,'/root/diagnostica/dati_diagnostica')
   for( i in listaSale) {
-    aTT<-xmlAttrs(i)["cDiagnostica"]
+    aTT<-xmlAttrs(i)["id_dati_diagnostica"]
+    calendar[[ aTT["id_dati_diagnostica"][1]   ]]<-list()
+    calendar[[ aTT["id_dati_diagnostica"][1]   ]][[1]]<-list()
     for(ct in seq(1, (60/5)*24  )) {
-      calendar[[ aTT["cDiagnostica"]   ]][[1]][[ ct ]]<-list()
+      calendar[[ aTT["id_dati_diagnostica"][1]   ]][[1]][[ ct ]]<-list()
     }        
     for( days in seq(1,365)) {       
-      calendar[[ aTT["cDiagnostica"]   ]][[ days ]] <- calendar[[ aTT["cDiagnostica"]   ]][[1]]
+      calendar[[ aTT["id_dati_diagnostica"][1]   ]][[ days ]] <- calendar[[ aTT["id_dati_diagnostica"][1]   ]][[1]]
     }
   }
   # ora leggi l'XML per popolare il calendario
@@ -59,15 +61,20 @@ buildCalendarStruct<-function(   ) {
   for( i in lRules ) {
     aTT<-xmlAttrs( i )  
     cDiagnostica<-aTT["cDiagnostica"]
-    fromSlot<-aTT["fromSlot"]
-    toSlot<-aTT["toSlot"]
+    fromSlot<-as.numeric(aTT["fromSlot"])
+    toSlot<-as.numeric(aTT["toSlot"])
     dayOfTheWeek<-aTT["dayOfTheWeek"]
     fromDay<-as.numeric(aTT["fromDay"])
     toDay<-as.numeric(aTT["toDay"])
+    cFamiglia<-as.numeric(aTT["cFamiglia"])
     period<-aTT["period"]
     if ( period == "w" ) {
       for( ii in seq(from=fromDay,to=toDay,by=7)) {
-        print("Arrivato qui"); die()
+        
+        for(iii in seq(from=fromSlot, to=toSlot)) {
+          ct<-length(calendar[[ cDiagnostica ]][[ii]][[iii]])+1
+          calendar[[ cDiagnostica ]][[ii]][[iii]][[ct]]<-cFamiglia
+        }
       }
     } else { cat ("#gj9fj9gf"); stop(); }
   }
@@ -77,18 +84,17 @@ buildCalendarStruct<-function(   ) {
 findOutTheFirstPositionInAgenda<-function(examName,familyName) {
   IdFamiglia<-getIdFromFamilyName(familyName)
   if( length(calendar)==0 ) buildCalendarStruct()
-  
 }
 
 
 phoneCall<-function(atTime) {
   examStruct<-getRandomExam()
-  findOutTheFirstPositionInAgenda( examName=examStruct["nome_esame"], familyName=examStruct["nome_famiglia"] )
+  findOutTheFirstPositionInAgenda( examName = examStruct["nome_esame"], familyName = examStruct["nome_famiglia"] )
 }
 
 
-
-
+IdVSFamilyNameCache<-c()
+calendar<<-list()
 numOfReservation<-50
 examProbabilityCache<<-list()
 jradio.xml = xmlInternalTreeParse("./jradio.xml")

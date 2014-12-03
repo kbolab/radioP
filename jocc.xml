@@ -2,7 +2,7 @@
 <root>
     <rules>
         <rule cFamiglia="1" cDiagnostica="6" dayOfTheWeek="1" fromSlot="96" toSlot="130" period="w" fromDay="1" toDay="100"/>
-        <rule cFamiglia="2" cDiagnostica="6" dayOfTheWeek="1" fromSlot="131" to="160" period="w" fromDay="1" toDay="100"/>
+        <rule cFamiglia="2" cDiagnostica="6" dayOfTheWeek="1" fromSlot="131" toSlot="160" period="w" fromDay="1" toDay="100"/>
 
         <rule cFamiglia="1" cDiagnostica="6" dayOfTheWeek="2" fromSlot="96" toSlot="130" period="w" fromDay="1" toDay="100"/>
         <rule cFamiglia="2" cDiagnostica="6" dayOfTheWeek="2" fromSlot="131" toSlot="160" period="w" fromDay="1" toDay="100"/>
