@@ -72,8 +72,10 @@ buildCalendarStruct<-function(   ) {
       for( ii in seq(from=fromDay,to=toDay,by=7)) {
         
         for(iii in seq(from=fromSlot, to=toSlot)) {
-          ct<-length(calendar[[ cDiagnostica ]][[ii]][[iii]])+1
-          calendar[[ cDiagnostica ]][[ii]][[iii]][[ct]]<-cFamiglia
+          if( !(cFamiglia %in% calendar[[ cDiagnostica ]][[ii]][[iii]] )) {
+            ct<-length(calendar[[ cDiagnostica ]][[ii]][[iii]])+1
+            calendar[[ cDiagnostica ]][[ii]][[iii]][[ct]]<-cFamiglia
+          }
         }
       }
     } else { cat ("#gj9fj9gf"); stop(); }
