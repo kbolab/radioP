@@ -8,6 +8,8 @@ buildExamProbabilityCache<-function() {
     nomeEsame<-xpathApply(xmlDoc(i),'/dati_esame',xmlAttrs)
     nomeEsame<-nomeEsame[[1]]["nome_esame"]
     listaFamiglieAssociate<-xpathApply(xmlDoc(i),'/dati_esame/associazione_famiglia_esame',xmlAttrs)
+    
+    
     for( ii in seq(1,length(listaFamiglieAssociate))) {
      matrice<-rbind( matrice, c(nomeEsame, listaFamiglieAssociate[[ii]]["nome_famiglia"],listaFamiglieAssociate[[ii]]["richieste"]   )  ) 
     }    
@@ -31,7 +33,7 @@ getIdFromFamilyName<-function(familyName) {
     a<-xpathApply(jradio.xml,'/root/famiglie/tipo_famiglia',xmlAttrs)
     IdVSFamilyNameCache<<-c()
     for( i in seq(1,length(a)))    {
-      IdVSFamilyNameCache<<-rbind(IdVSFamilyNameCache,c( a[[i]]["id_tipo_famiglia"], a[[i]]["nome_famiglia"]))
+      IdVSFamilyNameCache<<-rbind(IdVSFamilyNameCache,c( a[[i]]["id_tipo_famiglia"], a[[i]]["nome_famiglia"],a[[i]]["durata"]))
     }
   }
   a<-which(IdVSFamilyNameCache[,2]==familyName,arr.ind = T)
@@ -80,12 +82,16 @@ buildCalendarStruct<-function(   ) {
       }
     } else { cat ("#gj9fj9gf"); stop(); }
   }
-  
+  calendar<<-calendar
 }
 
 findOutTheFirstPositionInAgenda<-function(examName,familyName) {
   IdFamiglia<-getIdFromFamilyName(familyName)
   if( length(calendar)==0 ) buildCalendarStruct()
+   
+  durataTipicaEsame<-IdVSFamilyNameCache[which(IdVSFamilyNameCache[,2]==familyName,arr.ind = T),3]
+stop()
+  
 }
 
 
