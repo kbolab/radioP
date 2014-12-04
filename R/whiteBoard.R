@@ -82,14 +82,67 @@ buildCalendarStruct<-function(   ) {
       }
     } else { cat ("#gj9fj9gf"); stop(); }
   }
+  
   calendar<<-calendar
+  
+  quickCalendar<-list();
+  for(cDiagn in names(calendar)) {
+    quickCalendar[[ cDiagn ]]<-list()
+    for( day in seq(1,MAXDAY)) {
+      quickCalendar[[ cDiagn ]][[ day ]]<-list()
+      quickCalendar[[ cDiagn ]][[ day ]]<-fillQuickCalendar( cDiagn, day )
+    }
+  }
+  
+  
+  quickCalendar<<-quickCalendar
+  
+}
+
+fillQuickCalendar<-function( cDiagn, day ) {
+  
+    lista<-calendar[[ cDiagn ]][[ day ]]
+    defOut<-list();    
+    
+    for(i in seq(1,dim(IdVSFamilyNameCache)[1] )   ) {
+      nomeFamiglia<-IdVSFamilyNameCache[i,"nome_famiglia"]
+      
+      for(cDiagn in names(calendar)) {
+        
+        # per ogni slot
+        for(ii in seq( from=length( lista ), to = 1, by = -1 )) {
+          
+          # calcola da lì in poi 
+          for(iii in seq( ii, to = 1, by = -1 )) {
+            
+             stop()
+            
+          }
+          
+          
+        }
+        
+      }
+      
+    }
+    print(length(calendar))
+    stop()
+  
 }
 
 findOutTheFirstPositionInAgenda<-function(examName,familyName) {
   IdFamiglia<-getIdFromFamilyName(familyName)
   if( length(calendar)==0 ) buildCalendarStruct()
    
-  durataTipicaEsame<-IdVSFamilyNameCache[which(IdVSFamilyNameCache[,2]==familyName,arr.ind = T),3]
+  durataTipicaEsame<-as.numeric(IdVSFamilyNameCache[which(IdVSFamilyNameCache[,2]==familyName,arr.ind = T),3])
+  
+  # scorri i giorni della settimana per cercare il giorno giusto
+  for(i in seq(1,MAXDAY)) {
+
+    
+    
+  }
+  print(durataTipicaEsame)
 stop()
   
 }
@@ -103,10 +156,12 @@ phoneCall<-function(atTime) {
 
 IdVSFamilyNameCache<-c()
 calendar<<-list()
+quickCalendar<<-list()
 numOfReservation<-50
 examProbabilityCache<<-list()
 jradio.xml = xmlInternalTreeParse("./jradio.xml")
 jocc.xml = xmlInternalTreeParse("./jocc.xml")
+MAXDAY<<-100
 
 
 for(i in seq(1,50)) {
