@@ -106,23 +106,28 @@ fillQuickCalendar<-function( cDiagn, day ) {
     
     for(i in seq(1,dim(IdVSFamilyNameCache)[1] )   ) {
       nomeFamiglia<-IdVSFamilyNameCache[i,"nome_famiglia"]
+      defOut[[nomeFamiglia]]<-list()
+      defOut[[nomeFamiglia]][[cDiagn]]<-list()
       
-      for(cDiagn in names(calendar)) {
+      # per ogni slot
+      for(ii in seq( from=length( lista )-1, to = 1, by = -1 )) {
         
-        # per ogni slot
-        for(ii in seq( from=length( lista ), to = 1, by = -1 )) {
+        # calcola da lì in poi 
+        for(iii in seq( ii-1, to = 1, by = -1 )) {
+          if( cDiagn=="2") browser()
           
-          # calcola da lì in poi 
-          for(iii in seq( ii, to = 1, by = -1 )) {
-            
-             stop()
-            
+          if( cDiagn %in% calendar[[ cDiagn ]][[ day ]][[ iii ]]) { 
+            defOut[[nomeFamiglia]][[cDiagn]][[iii]]<-defOut[[nomeFamiglia]][[cDiagn]][[iii]]+1
           }
-          
+          else {
+            defOut[[nomeFamiglia]][[cDiagn]][[ii]]=1
+          }
           
         }
         
+        
       }
+        
       
     }
     print(length(calendar))
