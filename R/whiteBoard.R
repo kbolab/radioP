@@ -103,44 +103,36 @@ fillQuickCalendar<-function( cDiagn, day ) {
   
     lista<-calendar[[ cDiagn ]][[ day ]]
     defOut<-list();    
-    
+
     for(i in seq(1,dim(IdVSFamilyNameCache)[1] )   ) {
       nomeFamiglia<-IdVSFamilyNameCache[i,"nome_famiglia"]
       defOut[[nomeFamiglia]]<-list()
       defOut[[nomeFamiglia]][[cDiagn]]<-list()
       
       # per ogni slot
-      for(ii in seq( from=length( lista )-1, to = 1, by = -1 )) {
-        
-        # calcola da lì in poi 
+      for(ii in seq( from=length( lista )-1, to = 2, by = -1 )) {
+
+        # calcola da lì in poi  print("d") 
         for(iii in seq( ii-1, to = 1, by = -1 )) {
-          if( cDiagn=="2") browser()
-          
+          if( cDiagn=="2") browser()          
           if( cDiagn %in% calendar[[ cDiagn ]][[ day ]][[ iii ]]) { 
             defOut[[nomeFamiglia]][[cDiagn]][[iii]]<-defOut[[nomeFamiglia]][[cDiagn]][[iii]]+1
           }
           else {
             defOut[[nomeFamiglia]][[cDiagn]][[ii]]=1
-          }
-          
-        }
-        
-        
-      }
-        
-      
+          }          
+        }               
+      }      
     }
     print(length(calendar))
-    stop()
-  
+    stop()  
 }
 
 findOutTheFirstPositionInAgenda<-function(examName,familyName) {
   IdFamiglia<-getIdFromFamilyName(familyName)
   if( length(calendar)==0 ) buildCalendarStruct()
-   
+  print("d")
   durataTipicaEsame<-as.numeric(IdVSFamilyNameCache[which(IdVSFamilyNameCache[,2]==familyName,arr.ind = T),3])
-  
   # scorri i giorni della settimana per cercare il giorno giusto
   for(i in seq(1,MAXDAY)) {
 
